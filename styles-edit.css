@@ -1,0 +1,158 @@
+/* styles.css */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+body {
+    background: no-repeat linear-gradient(
+        rgba(80, 138, 245, 0.596) 0%,
+        rgba(245, 96, 10, 0.486) 66%,
+        rgba(2, 0, 116, 0.568) 100%
+    );
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 100px;
+    background-color: #ffffff10;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Efek kaca buram dengan tingkat blur 10px */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="quotes"],
+select {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="quotes"]:focus {
+    border-color: #32b336;
+}
+
+.form-group {
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+    margin-bottom: 10px; /* Jarak antar input */
+}
+
+.btn-submit-container {
+    text-align: center; /* Menengahkan elemen dalam form */
+}
+
+.btn-submit {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #00a008;
+    box-shadow: 0 0 10px #00a008;
+    transition: 0.3s ease-out;
+}
+
+.no-data {
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #45a049;
+    color: white;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
