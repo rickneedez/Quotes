@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // Default username for XAMPP MySQL
-$password = "";     // Default password for XAMPP MySQL is empty
+$username = "root";
+$password = "";
 $dbname = "crud_app";
 
 // Membuat koneksi
